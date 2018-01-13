@@ -1,0 +1,347 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+   padding: 0; 
+
+}
+
+li {
+    list-style-type: none;
+}
+
+dd{
+    margin: 0;
+}
+
+select{
+    padding: 10px;
+    width: 300px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.space-list-items{
+    margin-bottom: 7px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ee1515;
+    border: 3px #ccc;
+}
+
+.search-filter{
+	border-radius: 3px;
+	margin: 10px 0;
+    margin-bottom: 1em;
+	padding: 12px;
+	border: 0.5px solid #ccc;
+	font-size: 16px;
+	width: 200px;
+}
+
+.search-filter-container{
+    margin-top: 1em;
+}
+
+.generations{
+    display: flex;
+    justify-content: center;
+}
+
+.generations li{
+    margin: 10px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.header{
+	text-align: center;
+	font-size: 35px;
+	font-weight: 100;
+    margin: 10px;
+    color: white;
+}
+
+.header-small{
+    text-align: center;
+	font-size: 15px;
+	font-weight: 100;
+    margin: 5px;
+}
+
+.fine-print{
+    text-align: left;
+	font-size: 12px;
+	font-weight: 100;
+    color: #333;
+    margin: 0;
+} 
+
+.active{
+    font-weight: bold;
+}
+
+.home-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.type-weakness-container{
+    margin-left: 20px;
+}
+
+@media (max-width: 1024px){
+    .type-weakness-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .type-weakness-list li{
+        margin: 0 1em;
+    }
+}
+
+.type-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-list li{
+    color: white;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.poke-grid{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 25px;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    justify-content: space-around;
+}
+
+.poke-preview-item{    
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    align-content: center;
+    width: 220px;
+}
+
+.poke-preview-item h1{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.poke-preview-item:hover{
+    background: linear-gradient(#f2f2f2, #f8f8f8);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.poke-detail-container{
+    width: 90%;
+    padding: 2em;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+}
+
+.poke-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poke-details li{
+    padding: 5px;
+}
+
+.poke-info-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 1em;
+}
+
+.poke-info{
+    display: inline-block;
+    text-align: center;
+}
+
+.poke-info li{
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 0 10px;
+}
+
+.dex-entry{
+    text-align: justify;
+	font-size: 25px;
+	font-weight: 100;
+    margin: 5px;
+}
+
+.info-title{
+    text-align: left;
+	font-size: 35px;
+	font-weight: 100;
+    margin: 5px;
+}
+
+.info-value{
+    text-align: left;
+	font-size: 25px;
+	font-weight: 100;
+    margin: 5px;
+}
+
+.evo-chain-container{
+    margin: 2em;
+    margin-right: 0;
+}
+
+.evo-chain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.evo-chain-item-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.evo-chain-item{    
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    align-content: center;
+    width: 220px;
+}
+
+.evo-chain-item h1{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.evo-sprite{
+    height: 150px;
+}
+
+.poke-coin img{
+    border-radius: 100%;
+    border: 5px solid black;
+}
+
+.poke-coin img:hover{
+    background: linear-gradient(#f8f8f8 #f2f2f2);
+    transform: translateY(-3px);
+}
+
+.chevron{
+    height: 100px;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+}
+
+.poke-stats-container{
+    height: 280px;
+    margin-bottom: 4em;
+}
+
+.button{
+    color: white;
+    background: #5cb85c;
+    border: 1px solid transparent;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 6px 12px;
+    margin: 20px;
+    white-space: nowrap;
+}
+
+.button:hover:enabled{
+    background: linear-gradient(#5cb85c, #4cae4c);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:active{
+    transform: translateY(1px);
+}
+
+.row{
+	display: flex;
+    align-items: center;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	align-items: center;
+}
+
+.column label{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+.reset{
+	border: none;
+	background: transparent;
+	color: #d0021b;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.reset:hover{
+	cursor: pointer;
+}
